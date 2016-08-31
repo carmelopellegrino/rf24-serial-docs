@@ -12,7 +12,7 @@ controllable via [Serial Peripheral Interface](https://en.wikipedia.org/wiki/Ser
 ## Table of contents
 
   * [Installation](#installation)
-  * [Configuration](#configuration)
+  * [Configuration of the adapter](#configuration-of-the-adapter)
   * [Communication between two serials](#communication-between-two-serials)
   * [Communication between a serial and an MCU](#communication-between-a-serial-and-an-mcu)
     * [Coding](#coding)
@@ -23,7 +23,7 @@ Mount your NRF24L01(+) on the adapter orienting the antenna in the
 opposite direction with respect the USB connector (see image below).
 ![How to mount the NFR24L01 on USB adapter](/images/how_to_mount.jpg)
 
-## Configuration
+## Configuration of the adapter
 
 ## Communication between two serials
 
