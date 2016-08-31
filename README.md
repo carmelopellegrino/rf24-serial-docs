@@ -79,6 +79,27 @@ must coincide.
 What you write to a serial terminal is immediately sent to the other.
 
 ## Communication between a serial and an MCU
+The microcontroller on the adapter uses 32-bytes-wide fixed-length
+messages. The first byte must contain the actual user data length so only
+31 bytes are available to the user. Even if the message is shorter, 32
+bytes must be used.
+If the data to transmit is longer than 31 bytes it must be split into
+several messages and rebuilt after the transmission.
+A 32-bytes message will always be sent and expected to be received by the
+adapter.
+
+Thus, an MCU connected via SPI to its own NRF24L01(+) must be programmed
+fullfilling these constraints in order to correctly communicate with the
+adapter.
+
+Schematic of a message:
+
+    +-------+-------+-------+-------+-------+-------+-------+
+    |       |       |       |       |       |       |       |
+    |   0   |   1   |   2   |  ...  |   N   |  ...  |   31  |
+    |       |       |       |       |       |       |       |
+    +-------+-------+-------+-------+-------+-------+-------+
+     Length | User                          | Empty
 
 ### Coding
 
