@@ -23,6 +23,19 @@ Mount your NRF24L01(+) on the adapter orienting the antenna in the
 opposite direction with respect the USB connector (see image below).
 ![How to mount the NFR24L01 on USB adapter](/images/how_to_mount.jpg)
 
+The adapter most probably ships a CH340T USB to serial converter. This
+chinese chip requires installation of drivers on Windows and Mac OS
+operating systems, while is natively supported by the Linux kernel.
+
+You'll find very quickly the most updated drivers for your system on the
+Internet.
+
+You'll also need a serial terminal emulator, like
+[PuTTY](http://www.putty.org/). Install one of your choice and configure
+it for connection at 9600/8-N-1.
+
+Now you're ready for starting using your adapter :wink:
+
 ## Configuration of the adapter
 
 ## Communication between two serials
