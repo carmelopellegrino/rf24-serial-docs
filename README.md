@@ -70,6 +70,13 @@ output. Probably they are UTF-16 chinese chars not well displayed by your
 locale.
 
 ## Communication between two serials
+Using two adapters is straight forward. You have to open a serial
+connections to each of your adapters and configure them such that the
+remote address of one is the local address of the other. All other
+communication parameters such as the data speed, the frequency and the CRC
+must coincide.
+
+What you write to a serial terminal is immediately sent to the other.
 
 ## Communication between a serial and an MCU
 
