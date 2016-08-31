@@ -65,6 +65,9 @@ A list of available AT commands follows:
   * `AT+FREQ=2.abcG`: set the operating frequency; `abc` can be any integer number between 400 and 525 (default 2.400G). **NOTE:** in other contextes this parameter is called *channel*; the correspondance is linear such that 400 and 525 correspond to channels 0 and 125, respectively (e.g.: 409 corresponds to channel 9). **NOTE:** to avoid interferences with WiFi use frequencies above 2.500GHz.
   * `AT+CRC=n`: set the CRC length, in bits; n = 8/16 (default: 16 bit)
 
+**NOTE:** all AT commands are written using capital letters, without
+spaces and using the english typeset.
+
 **NOTE:** don't be afraid if you see dumb chars on the serial terminal ad
 output. Probably they are UTF-16 chinese chars not well displayed by your
 locale.
