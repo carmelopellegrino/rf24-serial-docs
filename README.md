@@ -37,6 +37,37 @@ it for connection at 9600/8-N-1.
 Now you're ready for starting using your adapter :wink:
 
 ## Configuration of the adapter
+The adapter allows to set up only a subset of configuration parameters
+supported by the NRF24L01. In particular it is **not** possible to set:
+
+  * the emission power (set to 0 dBm)
+  * the address length (set to 5 bytes -> 40 bits)
+  * the data length (32 bytes, 31 for user data)
+  * more than one destination address
+
+The configuration can be done via AT commands on the serial terminal.
+A list of available AT commands follows:
+
+  * `AT?`: return the current configuration
+  * `AT+BAUD=n`: set the baud rate of the serial connection; `n`=1-6:
+    * 1 -> 4800
+    * 2 -> 9600 (default)
+    * 3 -> 14400
+    * 4 -> 19200
+    * 5 -> 38400
+    * 6 -> 115200
+  * `AT+RATE=n`: set the data link speed; `n`=1-3:
+    * 1 -> 250Kbps
+    * 2 -> 1Mbps
+    * 3 -> 2Mbps (default)
+  * `AT+RXA=0Xnn,0Xnn,0Xnn,0Xnn,0Xnn`: set the local receiving address (default 0xff,0xff,0xff,0xff,0xff) in hexadecimal format
+  * `AT+TXA=0Xnn,0Xnn,0Xnn,0Xnn,0Xnn`: set the target address (default 0xff,0xff,0xff,0xff,0xff) in hexadecimal format
+  * `AT+FREQ=2.abcG`: set the operating frequency; `abc` can be any integer number between 400 and 525 (default 2.400G). **NOTE:** in other contextes this parameter is called *channel*; the correspondance is linear such that 400 and 525 correspond to channels 0 and 125, respectively (e.g.: 409 corresponds to channel 9). **NOTE:** to avoid interferences with WiFi use frequencies above 2.500GHz.
+  * `AT+CRC=n`: set the CRC length, in bits; n = 8/16 (default: 16 bit)
+
+**NOTE:** don't be afraid if you see dumb chars on the serial terminal ad
+output. Probably they are UTF-16 chinese chars not well displayed by your
+locale.
 
 ## Communication between two serials
 
