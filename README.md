@@ -4,7 +4,7 @@ Notes about interfacing NRF24L01(+) with USB adapter
 ## Introduction
 
 NFT24L01(+) is a small and cheap 2.4GHz radio receiver/transmitter
-controllable via Serial Peripheral Interface and produced by
+controllable via [Serial Peripheral Interface](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus) and produced by
 [Nordic semiconductor](http://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF24L01).
 
 ![NFR24L01 and USB adapter](/images/adapter.jpg)
