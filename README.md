@@ -19,6 +19,9 @@ controllable via [Serial Peripheral Interface](https://en.wikipedia.org/wiki/Ser
   * [References](#references)
 
 ## Installation
+Mount your NRF24L01(+) on the adapter orienting the antenna in the
+opposite direction with respect the USB connector (see image below).
+![How to mount the NFR24L01 on USB adapter](/images/how_to_mount.jpg)
 
 ## Configuration
 
