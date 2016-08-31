@@ -102,6 +102,18 @@ Schematic of a message:
      Length | User                          | Empty
 
 ### Coding
+Example code of message serialization, in C++:
+
+```cpp
+char const msg[] = "Hello, World!";
+
+char packet[32];
+
+packet[0] = sizeof(msg);
+memcpy(packet + 1, msg, sizeof(msg));
+
+nrf24.send(packet); // replace with the function of your choice/need
+```
 
 ## References
 
