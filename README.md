@@ -3,6 +3,15 @@ Notes about interfacing NRF24L01(+) with USB adapter
 
 ## Introduction
 
+## Table of contents
+
+  * [Installation](#installation)
+  * [Configuration](#configuration)
+  * [Communication between two serials](#communication-between-two-serials)
+  * [Communication between a serial and an MCU](#communication-between-a-serial-and-an-mcu)
+    * [Coding](#coding)
+  * [References](#references)
+
 ## Installation
 
 ## Configuration
