@@ -28,7 +28,11 @@ chinese chip requires installation of drivers on Windows and Mac OS
 operating systems, while is natively supported by the Linux kernel.
 
 You'll find very quickly the most updated drivers for your system on the
-Internet.
+Internet. Anyhow, here is a list of links to download the drivers from:
+  * [Linux](http://bsfrance.fr/documentation/10661_NRF24L01_ADAPTER/CH341SER_LINUX.ZIP) (generally not required)
+  * [Windows](http://bsfrance.fr/documentation/10661_NRF24L01_ADAPTER/CH341SER.ZIP)
+  * [Mac OS](http://bsfrance.fr/documentation/10661_NRF24L01_ADAPTER/CH341SER_MAC.ZIP)
+  * [Android](http://bsfrance.fr/documentation/10661_NRF24L01_ADAPTER/CH341SER_ANDROID.ZIP)
 
 You'll also need a serial terminal emulator, like
 [PuTTY](http://www.putty.org/). Install one of your choice and configure
